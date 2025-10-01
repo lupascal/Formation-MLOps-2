@@ -23,7 +23,7 @@ jobs:
         run: flake8 formation_indus_ds_avancee
       - name: Run Vulture
         run: vulture formation_indus_ds_avancee scripts --min-confidence 100
-      - name: Run behave
-        run: behave tests/test_functional/features
       - name: Run tests
         run: python -m pytest --cov=formation_indus_ds_avancee/ tests/test_unit/ -vv -p no:warnings
+      - name: Run behave
+        run: behave tests/test_functional/features
