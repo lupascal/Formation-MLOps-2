@@ -24,6 +24,4 @@ jobs:
       - name: Run Vulture
         run: vulture formation_indus_ds_avancee scripts --min-confidence 100
       - name: Run tests
-        run: python -m pytest tests/test_unit
-      - name: Run coverage tests
         run: python -m pytest --cov=formation_indus_ds_avancee/ tests/test_unit/ -vv -p no:warnings
