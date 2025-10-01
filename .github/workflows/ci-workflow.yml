@@ -32,4 +32,4 @@ jobs:
           vulture . --min-confidence 80
       - name: Run tests
         run: |
-          pytest
+          PYTHONPATH=. pytest
